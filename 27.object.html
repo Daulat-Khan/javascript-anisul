@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // var name = "anisul islam";
+        // var age = 27,
+        // var cgpa = 3.92,
+        // var lang = ["bengali", "hindi",
+        // "english",]
+        // console.log()
+
+        function student(name,age,cgpa,lang){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+            this.display = function(){
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.cgpa);
+                console.log(this.lang);
+
+            }
+        }
+
+        var student1 = new student ("Anisul islam",27,3.92,["bengali", "hindi",
+        "english",])
+        student1.display();
+
+        // var student1 = {
+        // name: "anisul islam",
+        //  age:  27,
+        // cgpa:  3.92,
+        // lang:  ["bengali", "hindi",
+        // "english",]
+        // }
+
+        // var student2 = {
+        // name: "anisul ",
+        //  age:  27,
+        // cgpa:  3.92,
+        // lang:  ["bengali", "hindi",
+        // "english",]
+        // }
+        // var student3 = {
+        // name: " islam",
+        //  age:  27,
+        // cgpa:  3.92,
+        // lang:  ["bengali", "hindi",
+        // "english",]
+        // }
+
+
+        // console.log(student1.name);
+        // console.log(student1.age);
+        // console.log(student1.cgpa);
+    </script>
+</body>
+</html>

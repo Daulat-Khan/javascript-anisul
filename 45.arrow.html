@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function display(){
+        //     console.log("i am display")
+        // }
+
+        // const display2 = () => {
+        //     console.log("i am display2")
+        // }
+
+        // display();
+        // display2();
+
+        // function message1(){
+        //     return "hi i am message1";
+            
+        // }
+        // console.log(message1());
+
+
+            var students = [
+
+                {
+                    id : 103,
+                    name :"rabeya",
+                    gpa :2.65,
+                },
+
+                {
+                    id : 104,
+                    name :"abeya",
+                    gpa :4.65,
+                },
+
+                {
+                    id : 105,
+                    name :"beya",
+                    gpa :3.65,
+                }
+            ]
+
+            function studentsNames(){
+                return students.filter(function(x){
+                    return x.gpa > 3
+                }).map(function(y){
+                    return y.name;
+                })
+            }
+
+        console.log(studentsNames());
+
+
+
+
+
+    </script>
+</body>
+</html>
